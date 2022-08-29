@@ -21,7 +21,8 @@ class Main extends React.Component {
         //console.log(city);
         //https://us1.locationiq.com/v1/search?key=pk.3fc653aec746a7cd84c80893136187a7&q=amman&format=json
         // key: pk.3fc653aec746a7cd84c80893136187a7
-        const key = 'pk.3fc653aec746a7cd84c80893136187a7';
+        const key = `pk.200f6f2618e285ce0a8ffd852d9d100d`;
+        
         const URL = `https://us1.locationiq.com/v1/search?key=${key}&q=${city}&format=json`
         
 
@@ -58,9 +59,9 @@ class Main extends React.Component {
                 <button type='submit' style={{backgroundColor:"white", border:"3px solid grey", borderRadius:"10px "}}>Search</button>
         </form>
         <h3>City:🏙️ {this.state.cityLocation} 🏙️</h3>
-        <h5>Latitude:⭕⭕ {this.state.latitude} ⭕⭕</h5>
-        <h5>Longitude:➖➖ {this.state.longitude} ➖➖</h5>
-        {this.state.mapFlag && <img src={`https://maps.locationiq.com/v3/staticmap?key=pk.3fc653aec746a7cd84c80893136187a7&center=${this.state.latitude},${this.state.longitude}`} style={{backgroundColor:"white", border:"3px solid white", borderRadius:"70px "}}></img>}
+        <h5>Latitude:⭕ {this.state.latitude} ⭕</h5>
+        <h5>Longitude:➖ {this.state.longitude} ➖</h5>
+        {this.state.mapFlag && <img alt="map" src={`https://maps.locationiq.com/v3/staticmap?key=pk.200f6f2618e285ce0a8ffd852d9d100d&center=${this.state.latitude},${this.state.longitude}`} style={{backgroundColor:"white", border:"3px solid white", borderRadius:"70px "}}></img>}
         {this.state.error && <Error  error={this.closeAlert}/>}
         </div>
         )

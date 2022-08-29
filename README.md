@@ -9,4 +9,4 @@ Finish time: 7:10
 
 Actual time needed to complete: 4:30
 
-![API DATA FLOW CHART](./images/API.png)
+![API DATA FLOW CHART](./src/images/API.png)

@@ -44,12 +44,14 @@ class Main extends React.Component {
     })
 }
     }
+
     closeAlert = () => {
         this.setState({
             // setShow : false
             error : false
            })
         }
+
     
     render(){
         return(
@@ -63,6 +65,7 @@ class Main extends React.Component {
         <h5>Longitude:➖ {this.state.longitude} ➖</h5>
         {this.state.mapFlag && <img alt="map" src={`https://maps.locationiq.com/v3/staticmap?key=pk.200f6f2618e285ce0a8ffd852d9d100d&center=${this.state.latitude},${this.state.longitude}`} style={{backgroundColor:"white", border:"3px solid white", borderRadius:"70px "}}></img>}
         {this.state.error && <Error  error={this.closeAlert}/>}
+
         </div>
         )
     

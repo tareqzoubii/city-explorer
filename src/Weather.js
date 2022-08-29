@@ -9,7 +9,9 @@ constructor(props){
         cityName: "",
         longitudeAPI: "",
         latitudeAPI: "",
-        timezone: ""
+        timezone: "",
+        description: "",
+        date: ""
     }
 }
     getWeatherData = async (event)=>{
@@ -25,7 +27,9 @@ constructor(props){
                 cityName: resResult2.data.city_name,
                 longitudeAPI: resResult2.data.lon,
                 latitudeAPI: resResult2.data.lat,
-                timezone: resResult2.data.timezone
+                timezone: resResult2.data.timezone,
+                description: resResult2.data.data[0].weather.description,
+                date: resResult2.data.data[0].datetime
                 
             })
             console.log(resResult2.data, "TA");
@@ -48,6 +52,8 @@ constructor(props){
         <h5>Longitude From API: {this.state.longitudeAPI}</h5>
         <h5>Latitude From API: {this.state.latitudeAPI}</h5>
         <h5>TimeZone: {this.state.timezone}</h5>
+        <h5>Description: {this.state.description}</h5>
+        <h5>Date: {this.state.date}</h5>
             </div>
         )
     }

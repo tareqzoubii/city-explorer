@@ -18,7 +18,7 @@ constructor(props){
         event.preventDefault();
         //alert('HELOO!') for testing 
         const cityWeather = event.target.weather.value;
-        const URL = `{process.env.REACT_APP_URL}getWatherData?name=${cityWeather}`;
+        const URL = `http://localhost:3131/getWatherData?name=${cityWeather}`;
         console.log(URL);
         try
         {

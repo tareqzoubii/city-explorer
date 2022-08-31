@@ -12,7 +12,7 @@ class ThirdParty extends React.Component {
 
   getMovie = async (event) => {
     const movieQuery = event.target.anyName.value;
-    const url = `http://localhost:3456/getMovie?movieQuery=${movieQuery}`;
+    const url = `${process.env.REACT_APP_URL}getMovie?movieQuery=${movieQuery}`;
     /////////////http://localhost:3456/getMovie?movieQuery=city
     // const serverRes = await axios.get(url).then;
     // console.log(serverRes.data);
@@ -36,7 +36,7 @@ class ThirdParty extends React.Component {
 
   getWeather = async (event) => {
     const searchQuery = event.target.anyName.value;
-    const URL = `http://localhost:3456/getWeather?searchQuery=${searchQuery}`;
+    const URL = `${process.env.REACT_APP_URL}/getWeather?searchQuery=${searchQuery}`;
     // const servResponce = await axios.get(URL);
     // console.log(servResponce.data);
     // this.setState({
@@ -99,9 +99,9 @@ class ThirdParty extends React.Component {
         {this.state.weatherArr.map((val, x) => {
           return (
             <div>
-              <h2>Day: {x + 1} </h2>
-              <h3>Description: {val.description}</h3>
-              <h3>Date: {val.datetime}</h3>
+              <h3>Day: {x + 1} </h3>
+              <h4>Description: {val.description}</h4>
+              <h4>Date: {val.datetime}</h4>
             </div>
           );
         })}
@@ -112,10 +112,10 @@ class ThirdParty extends React.Component {
             return (
               <div>
                 <img src={"https://image.tmdb.org/t/p/w500" + ele.poster_path} alt="img"></img>
-                <h3>title: {ele.original_title} </h3>
-                <h3>Review:{ele.overview}</h3>
-                <h3>Votes: {ele.vote_average}</h3>
-                <h3>Release Date: {ele.release_date}</h3>
+                <h4>title: {ele.original_title}</h4>
+                <h4>Review:{ele.overview}</h4>
+                <h4>Votes: {ele.vote_average}</h4>
+                <h4>Release Date: {ele.release_date}</h4>
               </div>
             );
         })}

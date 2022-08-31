@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Main from './Main'
-import Weather from "./Weather";
+//import Weather from "./Weather";
 import ThirdParty from "./ThirdParty";
 
 class App extends React.Component {
@@ -11,7 +11,6 @@ render() {
     <div >
     <Header />
     <Main />
-    {/* <Weather /> */}
     <ThirdParty />
     <Footer />
     </div>

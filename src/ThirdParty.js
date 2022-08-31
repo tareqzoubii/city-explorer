@@ -112,10 +112,10 @@ class ThirdParty extends React.Component {
             return (
               <div>
                 <img src={"https://image.tmdb.org/t/p/w500" + ele.poster_path} alt="img"></img>
-                <h3>title: {ele.original_title} </h3>
-                <h3>Review:{ele.overview}</h3>
-                <h3>Votes: {ele.vote_average}</h3>
-                <h3>Release Date: {ele.release_date}</h3>
+                <h4>title: {ele.original_title}</h4>
+                <h4>Review:{ele.overview}</h4>
+                <h4>Votes: {ele.vote_average}</h4>
+                <h4>Release Date: {ele.release_date}</h4>
               </div>
             );
         })}

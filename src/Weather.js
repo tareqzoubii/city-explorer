@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+//import ThirdParty from "./ThirdParty";
 
 
 class Weather extends React.Component {
@@ -47,13 +48,13 @@ constructor(props){
             <input type='text' name='weather' placeholder="Search" style={{backgroundColor:"white", border:"3px solid grey", borderRadius:"10px "}}/>
             <button type='submit' style={{backgroundColor:"white", border:"3px solid grey", borderRadius:"10px "}}>Search</button>
         </form>
-
         <h3>City: {this.state.cityName}</h3>
         <h5>Longitude From API: {this.state.longitudeAPI}</h5>
         <h5>Latitude From API: {this.state.latitudeAPI}</h5>
         <h5>TimeZone: {this.state.timezone}</h5>
         <h5>Description: {this.state.description}</h5>
         <h5>Date: {this.state.date}</h5>
+        
             </div>
         )
     }

@@ -6,14 +6,13 @@ class Footer extends React.Component {
     render() {
         return (
             <Card className="text-center">
-      <Card.Header style={{backgroundColor:"yellow"}}>Thank you for your time</Card.Header>
-      <Card.Body style={{backgroundColor:"grey"}}>
-        <Card.Title >Lab 6</Card.Title>
+      <Card.Header style={{backgroundColor:"teal"}}>Thank you for your time</Card.Header>
+      <Card.Body style={{backgroundColor:"white"}}>
+        <Card.Title >Level 301 Week2</Card.Title>
         <Card.Text>
-          Tareq Zoubii - Mohammad Alfayoume.
+          Tareq Zoubii @2022
         </Card.Text>
       </Card.Body>
-      <Card.Footer className="text-muted" style={{backgroundColor:"yellow"}}>Copy Rights &copy 2022</Card.Footer>
     </Card>
         )
     }

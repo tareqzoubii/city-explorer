@@ -55,7 +55,7 @@ class Main extends React.Component {
     
     render(){
         return(
-            <div style={{textAlign:"center", padding:"60px", backgroundColor:"grey"}}>
+            <div style={{textAlign:"center", padding:"60px", backgroundColor:"teal"}}>
             <form onSubmit={this.findCity}>
                 <input type='text' name='city' placeholder="Search for the city ..." style={{backgroundColor:"white", border:"3px solid grey", borderRadius:"10px ", marginRight: "8px"}}/>
                 <button type='submit' style={{backgroundColor:"white", border:"3px solid grey", borderRadius:"10px "}}>Search</button>

@@ -12,7 +12,7 @@ class ThirdParty extends React.Component {
 
   getMovie = async (event) => {
     const movieQuery = event.target.anyName.value;
-    const url = `http://localhost:3456/getMovie?movieQuery=${movieQuery}`;
+    const url = `${process.env.REACT_APP_URL}getMovie?movieQuery=${movieQuery}`;
     /////////////http://localhost:3456/getMovie?movieQuery=city
     // const serverRes = await axios.get(url).then;
     // console.log(serverRes.data);
@@ -36,7 +36,7 @@ class ThirdParty extends React.Component {
 
   getWeather = async (event) => {
     const searchQuery = event.target.anyName.value;
-    const URL = `http://localhost:3456/getWeather?searchQuery=${searchQuery}`;
+    const URL = `${process.env.REACT_APP_URL}/getWeather?searchQuery=${searchQuery}`;
     // const servResponce = await axios.get(URL);
     // console.log(servResponce.data);
     // this.setState({

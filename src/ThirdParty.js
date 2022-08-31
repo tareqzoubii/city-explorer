@@ -99,7 +99,7 @@ class ThirdParty extends React.Component {
         {this.state.weatherArr.map((val, x) => {
           return (
             <div>
-              <h2>Day: {x + 1} </h2>
+              <h3>Day: {x + 1} </h3>
               <h4>Description: {val.description}</h4>
               <h4>Date: {val.datetime}</h4>
             </div>
